@@ -9,7 +9,7 @@ const Footer = () => {
                             href="https://github.com/emjkenz" 
                             class="nav-link px-2 text-muted"
                             target="_blank"
-                            rel="noreffer noopener"
+                            rel="noreffer noopener noreferrer"
                         >Github</a>
                     </li>
                 </ul>
