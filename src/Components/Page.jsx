@@ -16,7 +16,7 @@ const PagePicker = ({page}) => {
 const Page = ({
     page,
 }) => 
-    <div className="container">
+    <div className="container py-3">
         <PagePicker page={page} />
     </div>
 
