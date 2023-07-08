@@ -2,9 +2,7 @@ import NotFound from "../Pages/404";
 import About from "../Pages/About";
 import Home from "../Pages/Home";
 
-const Page = ({
-    page,
-}) => {
+const PagePicker = ({page}) => {
     switch (page) {
         case 'home':
             return <Home />
@@ -14,5 +12,12 @@ const Page = ({
             return <NotFound />
     }
 }
+
+const Page = ({
+    page,
+}) => 
+    <div className="container">
+        <PagePicker page={page} />
+    </div>
 
 export default Page;
