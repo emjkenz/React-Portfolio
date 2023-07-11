@@ -1,6 +1,7 @@
 import NotFound from "../Pages/404";
 import About from "../Pages/About";
 import Home from "../Pages/Home";
+import './Page.css';
 
 const PagePicker = ({page}) => {
     switch (page) {
@@ -16,7 +17,7 @@ const PagePicker = ({page}) => {
 const Page = ({
     page,
 }) => 
-    <div className="container py-3">
+    <div className={`container-fluid py-3 ${page}-page`}>
         <PagePicker page={page} />
     </div>
 

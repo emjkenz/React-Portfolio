@@ -1,0 +1,10 @@
+.home-page{
+    background: linear-gradient(to left, #5b51f5, rgb(116 33 137));
+    color: #fff;
+    width: 100%;
+}
+
+.about-page {
+    background: linear-gradient(to left, #cc37bd, #32b2cf);
+    color: #fff;
+}
