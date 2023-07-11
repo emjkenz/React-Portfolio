@@ -1,0 +1,81 @@
+.home {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+.home .col {
+    display: flex;
+    justify-content: center;
+}
+
+.home .image-container {
+    /* Adjust the size of the image so its not so overpowering */
+    height: 70%;
+}
+
+.home .image-container img {
+    height: 100%;
+    /* The borders gives the image an interesting shape */
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.home .image-container img:hover {
+    /* Add an animation to the image when you hover over it */
+    animation: jiggle 1.5s infinite;
+}
+
+.underscore {
+    color: #f33fab;
+    /* Make the spacing of the "_" closer together to make it look larger */
+    letter-spacing: -6px;
+}
+
+.flash {
+    /* Add an animated flashing terminal cursor just like the inspiration website */
+    animation: flash 1s infinite;
+}
+
+@keyframes jiggle {
+
+    /* The animation sequence to make the image dance back and forth */
+    0% {
+        transform: rotate(0deg);
+    }
+
+    5% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(5deg);
+    }
+
+    80% {
+        transform: rotate(-5deg);
+    }
+
+    95% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes flash {
+
+    /* Fade the terminal cursor in and out */
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

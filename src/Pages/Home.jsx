@@ -1,12 +1,20 @@
+import emily from '../Images/Face.jpg';
+import './Home.css';
+
 const Home = () => {
     return (
-        <>
-            <h1>Home</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur culpa corporis
-                ipsa consequatur delectus veritatis numquam ullam, ratione aliquam dolorum vero
-                non voluptatem error earum quas nostrum. Rerum, dolor ipsam?
-            </p>
-        </>
+        <div className="row home">
+            <div className='col'>
+                <div>
+                    <p>Hello<span class="underscore">__</span></p>
+                    <h1>I'm <span class="emily">Emily</span><span class="flash">|</span></h1>
+                    <p>Developer in the making</p>
+                </div>
+            </div>
+            <div className="col image-container">
+                <img src={emily} alt="Portrait" />
+            </div>
+        </div>
     );
 }
 
