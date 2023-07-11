@@ -10,7 +10,7 @@ const Footer = () => {
                             class="nav-link px-2 text-muted"
                             target="_blank"
                             rel="noreffer noopener noreferrer"
-                        >Github</a>
+                        ><i class="bi-github"></i> Github</a>
                     </li>
                 </ul>
                 <p class="text-center text-muted">© {year} Emily's <span className="text-success">React</span> Portfolio</p>
