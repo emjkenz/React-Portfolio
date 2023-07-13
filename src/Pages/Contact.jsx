@@ -47,7 +47,7 @@ const Contact = () => {
                                         onChange={(e) => setName(e.target.value)}
                                         onMouseLeave={() => name !== '' ? setNameClass('is-valid') : setNameClass('is-invalid') }
                                     />
-                                    <div class="invalid-feedback">
+                                    <div className="invalid-feedback">
                                         Please provide a name.
                                     </div>
                                 </div>
@@ -62,7 +62,7 @@ const Contact = () => {
                                         onChange={(e) => checkEmail(e.target.value)}
                                         onMouseLeave={() => checkEmail(email)}
                                     />
-                                    <div class="invalid-feedback">
+                                    <div className="invalid-feedback">
                                         Please provide a valid email.
                                     </div>
                                 </div>
@@ -78,7 +78,7 @@ const Contact = () => {
                                     />
                                     {console.log(text)}
                                 </div>
-                                <div class="invalid-feedback">
+                                <div className="invalid-feedback">
                                     Please provide a message.
                                 </div>
                                 <button className="btn btn-primary">Submit</button>

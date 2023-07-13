@@ -62,7 +62,7 @@ const Portfolio = () => {
                             <div className='article-container'>
                                 {allProjects.map(project =>
                                     <article style={{ backgroundImage: `url(${project.image})` }}>
-                                        <div class="darken">
+                                        <div className="darken">
                                             <h3>{project.name}</h3>
                                             <p>{project.description}</p>
                                             <a href={project.url} target="_blank" rel="noreferrer noopener">{project.button}</a>
