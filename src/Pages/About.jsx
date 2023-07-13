@@ -1,11 +1,31 @@
+import './About.css';
+import emily from '../Images/Face.jpg';
+
 const About = () => {
     return (
         <>
-            <h1>About</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur culpa corporis 
-                ipsa consequatur delectus veritatis numquam ullam, ratione aliquam dolorum vero 
-                non voluptatem error earum quas nostrum. Rerum, dolor ipsam?
-            </p>
+            <div className="row">
+                <div className="col">
+                    <div className='container'>
+                        <div className='row'>
+                            <div className='col about'>
+                                <h1>About Me</h1>
+                                <div className='image-container'>
+                                    <img src={emily} alt="Me" />
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li>Registered Nurse</li>
+                                        <li>Cat mum</li>
+                                        <li>Gamer</li>
+                                        <li>Loose cannon</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     );
 }
