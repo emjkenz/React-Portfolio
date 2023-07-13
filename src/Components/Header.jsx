@@ -1,6 +1,29 @@
 const isActive = (activePage, page) => {
     return activePage === page ? ' active' : ''
-} 
+}
+
+const links = [
+    {
+        name: 'Home',
+        url: 'home',
+    },
+    {
+        name: 'About',
+        url: 'about',
+    },
+    {
+        name: 'Skills',
+        url: 'skills',
+    },
+    {
+        name: 'Contact',
+        url: 'contact',
+    },
+    {
+        name: 'Projects',
+        url: 'projects',
+    }
+]
 
 const Header = ({
     page,
@@ -18,27 +41,15 @@ const Header = ({
                     </button>
                     {/* Links */}
                     <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a
-                                className={`nav-link${isActive(page, 'home')}`}
-                                href="#home"
-                                onClick={() => setPage('home')}
-                            >Home</a>
-                        </li>
-                        <li className="nav-item">
-                            <a
-                                className={`nav-link${isActive(page, 'about')}`}
-                                href="#about"
-                                onClick={() => setPage('about')}
-                            >About</a>
-                        </li>
-                        <li className="nav-item">
-                            <a
-                                className={`nav-link${isActive(page, 'other')}`}
-                                href="#other"
-                                onClick={() => setPage('other')}
-                            >Other</a>
-                        </li>
+                        {links.map(link =>
+                            <li className="nav-item">
+                                <a
+                                    className={`nav-link${isActive(page, link.url)}`}
+                                    href={`#${link.url}`}
+                                    onClick={() => setPage(link.url)}
+                                >{link.name}</a>
+                            </li>
+                        )}
                     </ul>
                 </div>
             </nav>
