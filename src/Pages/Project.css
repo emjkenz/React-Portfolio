@@ -1,0 +1,74 @@
+.project .article-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project article:first-child {
+    /* Make the first article bigger than the others */
+    width: 100%;
+}
+
+.project article {
+    color: #fff;
+    width: 100%;
+    margin: 20px;
+    width: 33%;
+    flex-grow: 1;
+    /* Added the same curvy theme from the main imgage to the articles */
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    /* Made the background stretch to the container */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+    /* Hide the overflow of the .darken background */
+    overflow: hidden;
+}
+
+.project article:hover {
+    /* Make the article bigger when you hover over it */
+    scale: 1.05;
+}
+
+.project article .darken {
+    padding: 10px;
+    padding-top: 40px;
+    /* Made the background darker so the text stands out */
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.project article .darken:hover {
+    /* Make the background darker when you hover over the article */
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.project article h3 {
+    text-transform: uppercase;
+}
+
+.project article p {
+    margin-bottom: 10px;
+}
+
+.project article a {
+    /* Make the links look like buttons */
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    background: #0c75d0;
+    padding: 10px 20px;
+    border: none;
+    /* Gave the buttons curvy corners */
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: 0.3s;
+}
+
+.project article a:hover {
+    /* Make the button darker on hover */
+    background: #095aa1;
+}

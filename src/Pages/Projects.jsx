@@ -3,6 +3,7 @@ import MyMovieSearch from '../Images/mymoviesearch.gif'
 import PreWork from '../Images/code.jpg'
 import Homework from '../Images/seo.jpg'
 import Portfolio from '../Images/motivational.jpg'
+import './Project.css';
 
 const allProjects = [
     {
@@ -48,16 +49,19 @@ const Projects = () => {
             <div className="col">
                 <div className="container">
                     <div className="row">
-                        <div className="col">
-                            {allProjects.map(project => 
-                                <article style={{backgroundImage:project.image}}>
-                                    <div class="darken">
-                                        <h3>{project.name}</h3>
-                                        <p>{project.description}</p>
-                                        <a href={project.url} target="_blank" rel="noreferrer noopener">{project.button}</a>
-                                    </div>
-                                </article>
-                            )}
+                        <div className="col project">
+                            <h1>My Projects</h1>
+                            <div className='article-container'>
+                                {allProjects.map(project =>
+                                    <article style={{ backgroundImage: `url(${project.image})` }}>
+                                        <div class="darken">
+                                            <h3>{project.name}</h3>
+                                            <p>{project.description}</p>
+                                            <a href={project.url} target="_blank" rel="noreferrer noopener">{project.button}</a>
+                                        </div>
+                                    </article>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>
