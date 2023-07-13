@@ -8,8 +8,8 @@ const links = [
         url: 'home',
     },
     {
-        name: 'About',
-        url: 'about',
+        name: 'About Me',
+        url: 'about-me',
     },
     {
         name: 'Skills',
@@ -20,8 +20,8 @@ const links = [
         url: 'contact',
     },
     {
-        name: 'Projects',
-        url: 'projects',
+        name: 'Portfolio',
+        url: 'portfolio',
     },
     {
         name: 'Resume',

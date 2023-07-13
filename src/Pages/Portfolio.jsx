@@ -2,8 +2,8 @@ import ChoiceCuts from '../Images/choicecutsimage.png'
 import MyMovieSearch from '../Images/mymoviesearch.gif'
 import PreWork from '../Images/code.jpg'
 import Homework from '../Images/seo.jpg'
-import Portfolio from '../Images/motivational.jpg'
-import './Project.css';
+import MyPortfolio from '../Images/motivational.jpg'
+import './Portfolio.css';
 
 const allProjects = [
     {
@@ -39,18 +39,18 @@ const allProjects = [
         description: 'The HTML version of this website',
         url: 'https://github.com/emjkenz/my-portfolio',
         button: 'Read More',
-        image: Portfolio,
+        image: MyPortfolio,
     },
 ]
 
-const Projects = () => {
+const Portfolio = () => {
     return (
         <div className="row">
             <div className="col">
                 <div className="container">
                     <div className="row">
                         <div className="col project">
-                            <h1>My Projects</h1>
+                            <h1>My Portfolio</h1>
                             <div className='article-container'>
                                 {allProjects.map(project =>
                                     <article style={{ backgroundImage: `url(${project.image})` }}>
@@ -70,4 +70,4 @@ const Projects = () => {
     );
 }
 
-export default Projects;
+export default Portfolio;

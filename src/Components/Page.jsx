@@ -2,7 +2,7 @@ import NotFound from "../Pages/404";
 import About from "../Pages/About";
 import Contact from "../Pages/Contact";
 import Home from "../Pages/Home";
-import Projects from "../Pages/Projects";
+import Portfolio from "../Pages/Portfolio";
 import Skills from "../Pages/Skills";
 import Resume from "../Pages/Resume";
 import './Page.css';
@@ -11,14 +11,14 @@ const PagePicker = ({page}) => {
     switch (page) {
         case 'home':
             return <Home />
-        case 'about':
+        case 'about-me':
             return <About />
         case 'skills':
             return <Skills />
         case 'contact':
             return <Contact />
-        case 'projects':
-            return <Projects />
+        case 'portfolio':
+            return <Portfolio />
         case 'resume':
             return <Resume />
         default:
