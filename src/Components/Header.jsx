@@ -22,6 +22,10 @@ const links = [
     {
         name: 'Projects',
         url: 'projects',
+    },
+    {
+        name: 'Resume',
+        url: 'resume',
     }
 ]
 

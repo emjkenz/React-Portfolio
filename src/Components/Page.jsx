@@ -4,6 +4,7 @@ import Contact from "../Pages/Contact";
 import Home from "../Pages/Home";
 import Projects from "../Pages/Projects";
 import Skills from "../Pages/Skills";
+import Resume from "../Pages/Resume";
 import './Page.css';
 
 const PagePicker = ({page}) => {
@@ -18,6 +19,8 @@ const PagePicker = ({page}) => {
             return <Contact />
         case 'projects':
             return <Projects />
+        case 'resume':
+            return <Resume />
         default:
             return <NotFound />
     }

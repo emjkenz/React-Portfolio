@@ -32,3 +32,8 @@
     background: linear-gradient(to left, #5b51f5, #742189);
     color: #fff;
 }
+
+.resume-page {
+    background: linear-gradient(to right, #FFD700, #FF8C00, #FF4500, #FF1493, #800080);
+    color: #fff;
+}
