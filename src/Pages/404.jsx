@@ -1,8 +1,15 @@
+import './404.css';
+
 const NotFound = () => {
     return (
         <>
-            <h1>404</h1>
-            <p>Page Not Found</p>
+            <div className="row">
+                <div className="col notfound">
+                    <h1>404</h1>
+                    <p>Page Not Found</p>
+                    <a href='/' className='btn btn-primary'>Home</a>
+                </div>
+            </div>
         </>
     );
 }
