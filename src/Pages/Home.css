@@ -11,6 +11,7 @@
 .home .image-container {
     /* Adjust the size of the image so its not so overpowering */
     height: 70%;
+    width: auto;
 }
 
 .home .image-container img {
@@ -77,5 +78,21 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        /* Change the direction of the flex container to run vertically on mobile */
+        /* flex-direction: column; */
+    }
+
+    .home h1 {
+        font-size: 40px;
+    }
+
+    .home .image-container {
+        /* Reduce the image size on mobile */
+        height: 50%;
     }
 }
