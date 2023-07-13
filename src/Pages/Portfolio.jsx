@@ -5,6 +5,7 @@ import Homework from '../Images/seo.jpg'
 import MyPortfolio from '../Images/motivational.jpg'
 import Notepad from '../Images/notepad.jpg';
 import './Portfolio.css';
+import Project from '../Components/Project'
 
 const allProjects = [
     {
@@ -61,13 +62,7 @@ const Portfolio = () => {
                             <h1>My Portfolio</h1>
                             <div className='article-container'>
                                 {allProjects.map(project =>
-                                    <article style={{ backgroundImage: `url(${project.image})` }}>
-                                        <div className="darken">
-                                            <h3>{project.name}</h3>
-                                            <p>{project.description}</p>
-                                            <a href={project.url} target="_blank" rel="noreferrer noopener">{project.button}</a>
-                                        </div>
-                                    </article>
+                                    <Project project={project} />
                                 )}
                             </div>
                         </div>
