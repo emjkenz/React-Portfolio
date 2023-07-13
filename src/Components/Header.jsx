@@ -82,6 +82,7 @@ const Header = ({
                             isActive={isActive}
                             page={page}
                             setPage={setPage}
+                            addBorder={true}
                         />
                     )}
                 </ul>

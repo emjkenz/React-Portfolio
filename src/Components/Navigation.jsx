@@ -4,9 +4,10 @@ const Navigation = ({
     isActive,
     setPage,
     page,
+    addBorder = false,
 }) => {
     return (
-        <li className="nav-item border-top">
+        <li className={`nav-item ${addBorder?'border-top':''}`}>
             <a
                 className={`nav-link${isActive(page, url)}`}
                 href={`#${url}`}
