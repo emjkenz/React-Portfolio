@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Navigation from "./Navigation"
 
 const isActive = (activePage, page) => {
     return activePage === page ? ' active' : ''
@@ -60,13 +61,13 @@ const Header = ({
                     {/* Links */}
                     <ul className="navbar-nav d-none d-lg-flex">
                         {links.map(link =>
-                            <li className="nav-item">
-                                <a
-                                    className={`nav-link${isActive(page, link.url)}`}
-                                    href={`#${link.url}`}
-                                    onClick={() => setPage(link.url)}
-                                >{link.name}</a>
-                            </li>
+                            <Navigation
+                                name={link.name}
+                                url={link.url}
+                                isActive={isActive}
+                                page={page}
+                                setPage={setPage}
+                            />
                         )}
                     </ul>
                 </div>
@@ -75,13 +76,13 @@ const Header = ({
             <div className={`collapse ${mobileNav ? 'show' : ''}`} id="navToggle">
                 <ul className="bg-light navbar-nav text-center">
                     {links.map(link =>
-                        <li className="nav-item border-top">
-                            <a
-                                className={`nav-link${isActive(page, link.url)}`}
-                                href={`#${link.url}`}
-                                onClick={() => setPage(link.url)}
-                            >{link.name}</a>
-                        </li>
+                        <Navigation 
+                            name={link.name}
+                            url={link.url}
+                            isActive={isActive}
+                            page={page}
+                            setPage={setPage}
+                        />
                     )}
                 </ul>
             </div>
