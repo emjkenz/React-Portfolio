@@ -1,3 +1,7 @@
+.page {
+    min-height: 90vh;
+}
+
 .home-page{
     background: linear-gradient(to left, #5b51f5, rgb(116 33 137));
     color: #fff;
@@ -6,5 +10,25 @@
 
 .about-page {
     background: linear-gradient(to left, #cc37bd, #32b2cf);
+    color: #fff;
+}
+
+.skills-page {
+    background: linear-gradient(to left, #155393, #e70b98);
+    color: #fff;
+}
+
+.qualifications-page {
+    background: linear-gradient(to left, #31a786, #146899);
+    color: #fff;
+}
+
+.projects-page {
+    background: linear-gradient(to left, #682195, #d432d6);
+    color: #fff;
+}
+
+.contact-page {
+    background: linear-gradient(to left, #5b51f5, #742189);
     color: #fff;
 }

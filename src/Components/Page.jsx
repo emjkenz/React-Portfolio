@@ -1,6 +1,9 @@
 import NotFound from "../Pages/404";
 import About from "../Pages/About";
+import Contact from "../Pages/Contact";
 import Home from "../Pages/Home";
+import Projects from "../Pages/Projects";
+import Skills from "../Pages/Skills";
 import './Page.css';
 
 const PagePicker = ({page}) => {
@@ -9,6 +12,12 @@ const PagePicker = ({page}) => {
             return <Home />
         case 'about':
             return <About />
+        case 'skills':
+            return <Skills />
+        case 'contact':
+            return <Contact />
+        case 'projects':
+            return <Projects />
         default:
             return <NotFound />
     }
@@ -17,7 +26,7 @@ const PagePicker = ({page}) => {
 const Page = ({
     page,
 }) => 
-    <div className={`container-fluid py-3 ${page}-page`}>
+    <div className={`container-fluid page py-3 ${page}-page`}>
         <PagePicker page={page} />
     </div>
 
