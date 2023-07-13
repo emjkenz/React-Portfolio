@@ -44,7 +44,7 @@ const Header = ({
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
                     {/* Logo/Name */}
-                    <div className="navbar-brand">My Portfolio</div>
+                    <div className="navbar-brand">Em's Portfolio</div>
                     {/* Mobile Nav Button */}
                     <button
                         className="navbar-toggler"
