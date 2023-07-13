@@ -3,9 +3,17 @@ import MyMovieSearch from '../Images/mymoviesearch.gif'
 import PreWork from '../Images/code.jpg'
 import Homework from '../Images/seo.jpg'
 import MyPortfolio from '../Images/motivational.jpg'
+import Notepad from '../Images/notepad.jpg';
 import './Portfolio.css';
 
 const allProjects = [
+    {
+        name: 'PWA Text Editor',
+        description: 'A PWA powered Text Editor to jot down code snippits.',
+        url: 'https://github.com/emjkenz/PWA-Text-Editor',
+        button: 'Read More',
+        image: Notepad,
+    },
     {
         name: 'Group Project',
         description: 'A platform that connects farmers, ranchers, and consumers in the world of premium meat products.',

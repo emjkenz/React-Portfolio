@@ -4,17 +4,11 @@
     flex-wrap: wrap;
 }
 
-.project article:first-child {
-    /* Make the first article bigger than the others */
-    width: 100%;
-}
-
 .project article {
     color: #fff;
     width: 100%;
     margin: 20px;
-    width: 33%;
-    flex-grow: 1;
+    flex: 1 0 calc(100% / 3);
     /* Added the same curvy theme from the main imgage to the articles */
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -25,6 +19,15 @@
     transition: 0.3s;
     /* Hide the overflow of the .darken background */
     overflow: hidden;
+}
+
+.project article:first-child {
+    /* Make the first article bigger than the others */
+    flex-basis: 100%;
+}
+
+.project article:last-child {
+    flex: 0 0 calc(100% / 2);
 }
 
 .project article:hover {
