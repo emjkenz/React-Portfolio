@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.9ca7a8cb.css",
+    "main.js": "/React-Portfolio/static/js/main.95742164.js",
+    "static/js/787.1ed0c42c.chunk.js": "/React-Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/mymoviesearch.gif": "/React-Portfolio/static/media/mymoviesearch.06a3197f7041c4dc65fd.gif",
+    "static/media/choicecutsimage.png": "/React-Portfolio/static/media/choicecutsimage.05e186267ef7f50b11e8.png",
+    "static/media/code.jpg": "/React-Portfolio/static/media/code.ef390ea4c0d1ef18cae9.jpg",
+    "static/media/bootstrap-icons.woff?": "/React-Portfolio/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/Face.jpg": "/React-Portfolio/static/media/Face.722148eebadfe1f539d5.jpg",
+    "static/media/bootstrap-icons.woff2?": "/React-Portfolio/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
+    "static/media/seo.jpg": "/React-Portfolio/static/media/seo.34a22e33451f16d6f935.jpg",
+    "static/media/motivational.jpg": "/React-Portfolio/static/media/motivational.d9b519d5ec80b4eef254.jpg",
+    "static/media/notepad.jpg": "/React-Portfolio/static/media/notepad.55e28f491ade52fb82a9.jpg",
+    "static/media/Resume.docx": "/React-Portfolio/static/media/Resume.5d0dc2c0a2ee6c1e5db8.docx",
+    "index.html": "/React-Portfolio/index.html",
+    "main.9ca7a8cb.css.map": "/React-Portfolio/static/css/main.9ca7a8cb.css.map",
+    "main.95742164.js.map": "/React-Portfolio/static/js/main.95742164.js.map",
+    "787.1ed0c42c.chunk.js.map": "/React-Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ca7a8cb.css",
+    "static/js/main.95742164.js"
+  ]
+}
