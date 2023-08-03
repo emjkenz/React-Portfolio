@@ -4,10 +4,18 @@ import PreWork from '../Images/code.jpg'
 import Homework from '../Images/seo.jpg'
 import MyPortfolio from '../Images/motivational.jpg'
 import Notepad from '../Images/notepad.jpg';
+import Tutoriffic from '../Images/tutoriffic.jpg'
 import './Portfolio.css';
 import Project from '../Components/Project'
 
 const allProjects = [
+    {
+        name: 'Group Project 3',
+        description: 'A virtual online learning platform.',
+        url: 'https://github.com/emjkenz/Tutoriffic-Student',
+        button: 'Read More',
+        image: Tutoriffic,
+    },
     {
         name: 'PWA Text Editor',
         description: 'A PWA powered Text Editor to jot down code snippits.',
@@ -16,14 +24,14 @@ const allProjects = [
         image: Notepad,
     },
     {
-        name: 'Group Project',
+        name: 'Group Project 2',
         description: 'A platform that connects farmers, ranchers, and consumers in the world of premium meat products.',
         url: 'https://github.com/emjkenz/Choice-Cuts',
         button: 'Read More',
         image: ChoiceCuts,
     },
     {
-        name: 'Group Project',
+        name: 'Group Project 1',
         description: 'Built a website that enables a user to find movie screenings in their local area.',
         url: 'https://emjkenz.github.io/My-Movie-Search/',
         button: 'Read More',
